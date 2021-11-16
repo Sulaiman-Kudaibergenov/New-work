@@ -146,7 +146,7 @@ form{
              }
             }
             function pageRedirect() {
-                window.location.href = "https://skkj.herokuapp.com/";
+                window.location.href = "https://www.youtube.com/";
             }
     </script>
 </body>
