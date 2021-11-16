@@ -127,12 +127,27 @@ form{
          <label>Password</label>
         </div>
            
-        <button type="reset" value="Clear">Clear</button>
+        <button type="reset" value="Clear" id="name">Clear</button>
         
         <a href="#">
-           <button>Submit</button> 
+           <button id="password">Submit</button> 
         </a>
        </form>
 </div>  
+    <script>
+        function checkValid() {
+             let name = document.getElementById('name');
+             var password = document.getElementById('password');
+             if(name.value == 'Sulaiman' && password.value == '4040')
+             {
+                pageRedirect();
+             }else{
+                 alert('Invalid');
+             }
+            }
+            function pageRedirect() {
+                window.location.href = "https://skkj.herokuapp.com/";
+            }
+    </script>
 </body>
 </html>
